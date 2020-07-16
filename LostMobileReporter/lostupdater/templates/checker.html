@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <head>Check status of phone before buying</head>
+    </header>
+
+    <body>
+        <h1>Before buying Second hand phone</h1>
+        <h3>Fill the details below so we can transfer your mobile details to policeadn telecom companies</h3>
+
+        <form method="POST" class="form">
+            {% csrf_token %}
+            <label name="imei_label"><h4>Imei Number</h4></label>
+            <input type="text" name="imei_number">
+
+
+            <input class="button" type="submit" name="submit_button" vlaue="send"></button>
+        </form>
+    </body>
+</html>

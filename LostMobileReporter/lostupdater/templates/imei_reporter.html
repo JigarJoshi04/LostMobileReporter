@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <head>Report Lost</head>
+    </header>
+
+    <body>
+        <h1>Report your lost phone</h1>
+        <h3>Fill the details below so we can transfer your mobile details to policeadn telecom companies</h3>
+
+        <form method="POST" class="form" action="../report">
+            {% csrf_token %}
+            <label name="imei_label"><h4>Imei Number</h4></label>
+            <input type="text" name="imei_number">
+
+            <label name="mobile_label"><h4>Mobile Number</h4></label>
+            <input type="text" name="mobile_number">
+
+            <label name="mobile_company_label"><h4>Mobile Company</h4></label>
+            <input type="text" name="mobile_company">
+
+            <label name="mobile_model_label"><h4>Mobile Model</h4></label>
+            <input type="text" name="mobile_model">
+
+            <label name="email_label"><h4>Email id</h4></label>
+            <input type="text" name="email_id">
+
+            <input class="button" type="submit" name="submit_button" vlaue="send"></button>
+        </form>
+    </body>
+</html>
